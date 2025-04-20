@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public bool isGrounded;
     public float friction = 0.9f;
     public SpriteRenderer spriteRenderer;
+    public BoxCollider2D groundCollider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -63,23 +64,6 @@ public class Player_Movement : MonoBehaviour
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
         }
     }
 }
