@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 8737911210707811505}
   - component: {fileID: 8611285480990350689}
   - component: {fileID: 9173324620313781373}
+  - component: {fileID: 7204340835815867700}
   m_Layer: 0
   m_Name: Network_Player
   m_TagString: Player
@@ -467,7 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 2298761470
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -480,3 +481,20 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &7204340835815867700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758397315731444449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc02dd4f4df7924699494f41463071b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_PlayerInput: {fileID: 0}
+  m_PlayerMovement: {fileID: 8611285480990350689}
+  Ground_Check: {fileID: 5224575445503030875}
+  Weapon: {fileID: 4064571900038718875}
