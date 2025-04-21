@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 2062861464443699133}
   - component: {fileID: 4619221235274201694}
   - component: {fileID: 8737911210707811505}
+  - component: {fileID: -5267040142487645031}
   - component: {fileID: 8611285480990350689}
   - component: {fileID: 9173324620313781373}
   - component: {fileID: 7204340835815867700}
@@ -437,6 +438,49 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.62, y: 2.5146503}
   m_EdgeRadius: 0
+--- !u!114 &-5267040142487645031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758397315731444449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 0
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
 --- !u!114 &8611285480990350689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +538,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  m_PlayerInput: {fileID: 0}
   m_PlayerMovement: {fileID: 8611285480990350689}
   Ground_Check: {fileID: 5224575445503030875}
   Weapon: {fileID: 4064571900038718875}
