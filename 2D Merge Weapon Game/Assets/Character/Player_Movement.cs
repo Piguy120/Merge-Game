@@ -12,6 +12,7 @@ public class Player_Movement : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D groundCollider;
     private Vector2 moveInput;
+    private bool jumped = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +23,7 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        
         Jump();
     }
 
@@ -43,22 +44,22 @@ public class Player_Movement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-    }
-    void Move()
-    {
         rb.linearVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
     }
-
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        jumped = context.action.triggered;
+    }
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (jumped && isGrounded)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
         }
 
         // Stop the jump when the jump button is released
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0)
+        if (!jumped && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }

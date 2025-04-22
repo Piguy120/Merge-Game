@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Ground_Check : MonoBehaviour
 {
+    public Player_Movement playerMovement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,19 +19,12 @@ public class Ground_Check : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
-            Player_Movement playerMovement = GetComponentInParent<Player_Movement>();
-            if (playerMovement != null)
-            {
                 playerMovement.isGrounded = true;
-            }
+
         }
         else
         {
-            Player_Movement playerMovement = GetComponentInParent<Player_Movement>();
-            if (playerMovement != null)
-            {
-                playerMovement.isGrounded = false;
-            }
+                playerMovement.isGrounded = false;   
         }
     }
 }
