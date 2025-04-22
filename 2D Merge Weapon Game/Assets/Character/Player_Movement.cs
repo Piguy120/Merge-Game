@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Player_Movement : MonoBehaviour
     public float friction = 0.9f;
     public SpriteRenderer spriteRenderer;
     public BoxCollider2D groundCollider;
+    private Vector2 moveInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,18 +40,13 @@ public class Player_Movement : MonoBehaviour
         }
     }
 
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+    }
     void Move()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
-        if (moveInput > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (moveInput < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
+        rb.linearVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
     }
 
     void Jump()

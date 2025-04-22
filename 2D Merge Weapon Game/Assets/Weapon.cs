@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    private Camera mainCam;
+    public Camera mainCam;
     private Vector3 mousePos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        
     }
 
     // Update is called once per frame
