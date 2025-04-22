@@ -420,8 +420,7 @@ GameObject:
   - component: {fileID: 4619221235274201694}
   - component: {fileID: 8737911210707811505}
   - component: {fileID: 8611285480990350689}
-  - component: {fileID: 9173324620313781373}
-  - component: {fileID: 7204340835815867700}
+  - component: {fileID: 2512085004687026025}
   m_Layer: 0
   m_Name: Player_Character
   m_TagString: Player
@@ -594,7 +593,7 @@ MonoBehaviour:
   friction: 15
   spriteRenderer: {fileID: 4619221235274201694}
   groundCollider: {fileID: 8736784507124558023}
---- !u!114 &9173324620313781373
+--- !u!114 &2512085004687026025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -603,35 +602,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 6758397315731444449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2298761470
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!114 &7204340835815867700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6758397315731444449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfc02dd4f4df7924699494f41463071b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  m_PlayerMovement: {fileID: 8611285480990350689}
-  Ground_Check: {fileID: 5224575445503030875}
-  Weapon: {fileID: 4064571900038718875}
+  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 4796935964307693793}
