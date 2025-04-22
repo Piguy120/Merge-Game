@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Duck Sprite_0: -3456056519521298885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
