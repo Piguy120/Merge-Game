@@ -17,10 +17,11 @@ public class Ground_Check : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collision detected with: " + collision.gameObject.name);
         if (collision.CompareTag("Ground"))
         {
                 playerMovement.isGrounded = true;
-
+                Debug.Log("Player is grounded");
         }
     }
 }
