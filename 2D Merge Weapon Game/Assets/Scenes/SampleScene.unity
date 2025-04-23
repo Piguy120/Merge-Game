@@ -792,7 +792,7 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   m_PlayerPrefab: {fileID: 6758397315731444449, guid: 178e560eff7cac649b51236608af907d, type: 3}
   m_SplitScreen: 1
-  m_MaintainAspectRatioInSplitScreen: 1
+  m_MaintainAspectRatioInSplitScreen: 0
   m_FixedNumberOfSplitScreens: -1
   m_SplitScreenRect:
     serializedVersion: 2
