@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4061316037850902662}
   - component: {fileID: 3391983917377605362}
   - component: {fileID: 7073861528686517335}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 333738341082874465}
   - component: {fileID: 5880442804974113245}
   - component: {fileID: 6003381487969900380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ Transform:
   m_GameObject: {fileID: 2965813097867577991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2619526, y: 0.11393782, z: -0.0308903}
+  m_LocalPosition: {x: -1.2619526, y: 0.11393782, z: -30}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -281,7 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1479172495216783913}
   - component: {fileID: 4064571900038718875}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d59e89d0b22a248a04efcebfd60233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 8611285480990350689}
 --- !u!1 &6758397315731444449
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 8737911210707811505}
   - component: {fileID: 8611285480990350689}
   - component: {fileID: 2512085004687026025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player_Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

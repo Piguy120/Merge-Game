@@ -22,7 +22,10 @@ public class Ground_Check : MonoBehaviour
                 playerMovement.isGrounded = true;
 
         }
-        else
+        else if (collision.CompareTag("Player"))
+        {
+            Debug.Log("You just touched me");
+        }
         {
                 playerMovement.isGrounded = false;   
         }
